@@ -15,7 +15,9 @@ struct ProductRatingView: View {
     private let width: CGFloat
     private let height: CGFloat
     
-    init(_ productViewModel: ProductViewModel, width: CGFloat = 11, height: CGFloat = 11) {
+    init(_ productViewModel: ProductViewModel, 
+         width: CGFloat = 11,
+         height: CGFloat = 11) {
         self.productViewModel = productViewModel
         ratingValue = productViewModel.rating
         fullStars = Int(ratingValue)

@@ -12,6 +12,8 @@ import Combine
 class ProductListViewModel: ObservableObject {
     @Published var products: [ProductViewModel] = []
     @Published var filteredProducts: [ProductViewModel] = []
+    @Published var headerTitle: String = ""
+    @Published var headerSubtitle: String = ""
     
     private var cancellables = Set<AnyCancellable>()
     @Published var selectedFilter: SelectedFilter = .all
@@ -63,6 +65,9 @@ class ProductListViewModel: ObservableObject {
                 .fetchData(from: productsURL)
             
             let products: [Product] = response.products
+            
+            self.headerTitle = response.header.headerTitle
+            self.headerSubtitle = response.header.headerDescription
             
             mapToViewModels(products: products)
             categorizeProducts()

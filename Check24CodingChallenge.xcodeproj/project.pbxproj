@@ -100,7 +100,6 @@
 				DFBD453F2B84A3B500D5015F /* Extensions */,
 				DFBD452D2B84A05500D5015F /* Network */,
 				DFBD452C2B84A04F00D5015F /* Managers */,
-				DFBD452B2B84A04300D5015F /* Helpers */,
 				DFBD452A2B84A03E00D5015F /* Enums */,
 				DFBD45292B84A01C00D5015F /* Models */,
 				DFBD45282B84A01800D5015F /* ViewModels */,
@@ -158,13 +157,6 @@
 				DFBD45442B84A58900D5015F /* SelectedFilter.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		DFBD452B2B84A04300D5015F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DFBD452C2B84A04F00D5015F /* Managers */ = {

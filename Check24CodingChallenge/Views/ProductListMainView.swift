@@ -73,6 +73,16 @@ private extension ProductListMainView {
     @ViewBuilder
     func productsList() -> some View {
         List {
+            Section {
+                VStack(alignment: .leading, spacing: 3) {
+                    listTitle()
+                    listSubtititle()
+                }
+            }
+            .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
+            .listRowInsets(EdgeInsets())
+            
             ForEach(viewModel.filteredProducts) { productVM in
                 ZStack {
                     SingleProductView(productVM)
@@ -97,13 +107,27 @@ private extension ProductListMainView {
             }
             .listRowBackground(Color(UIColor.systemGroupedBackground))
         }
-        
+        .listSectionSpacing(8)
+        .contentMargins(.vertical, 8)
+
         .animation(.default, value: viewModel.selectedFilter)
         .refreshable {
             Task {
                 await viewModel.handleRefresh()
             }
         }
+    }
+    
+    @ViewBuilder
+    func listTitle() -> some View {
+        Text(viewModel.headerTitle)
+            .font(.headline)
+    }
+    
+    @ViewBuilder
+    func listSubtititle() -> some View {
+        Text(viewModel.headerSubtitle)
+            .font(.subheadline)
     }
     
     @ViewBuilder
