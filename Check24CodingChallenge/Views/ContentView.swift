@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = ProductListViewModel()
+    
     var body: some View {
         TabView {
             ProductListMainView()
+                .environmentObject(viewModel)
                 .toolbar(.hidden, for: .tabBar)
                 .tabItem {
                     Label("Product List", systemImage: "list.dash")

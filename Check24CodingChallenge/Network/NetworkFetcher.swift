@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 class NetworkFetcher: ObservableObject {
     let decoder = JSONDecoder()
-    
+    @ObservedObject private var networkMonitor = NetworkMonitor()
+
     func createURL(for url: APIEndpoint, path: String) -> URL {
         let baseURL = url.baseURL
         let urlString = baseURL.appendingPathComponent(path)
@@ -17,6 +19,10 @@ class NetworkFetcher: ObservableObject {
     }
     
     func fetchData<T: Decodable>(from url: URL) async throws -> T {
+        
+        guard networkMonitor.isConnected else {
+            throw NetworkError.noConnection
+        }
         
         let (data, response) = try await URLSession.shared.data(from: url)
         
@@ -36,6 +42,7 @@ class NetworkFetcher: ObservableObject {
             let result = try decoder.decode(T.self, from: data)
             return result
         } catch {
+            print(error)
             throw NetworkError.cannotDecodeData
         }
     }

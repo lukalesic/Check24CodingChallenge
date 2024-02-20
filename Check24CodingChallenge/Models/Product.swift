@@ -11,7 +11,7 @@ struct Product: Codable {
     let name: String
     let type: TypeEnum
     let id: Int
-    let color: Color
+    let color: ProductColor
     let imageURL: String
     let colorCode: ColorCode
     let available: Bool
@@ -21,7 +21,7 @@ struct Product: Codable {
     let price: Price
 }
 
-enum Color: String, Codable {
+enum ProductColor: String, Codable {
     case blue = "Blue"
     case green = "Green"
     case red = "Red"

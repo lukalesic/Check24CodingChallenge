@@ -25,7 +25,7 @@ extension NetworkError: LocalizedError {
         case .unexpectedStatusCode(_):
             return NSLocalizedString("Unexpected status code", comment: "")
         case .notFound:
-            return NSLocalizedString("URL not found!", comment: "")
+            return NSLocalizedString("404 endpoint not found!", comment: "")
         case .cannotDecodeData:
             return NSLocalizedString("Cannot decode data at the moment", comment: "")
         }

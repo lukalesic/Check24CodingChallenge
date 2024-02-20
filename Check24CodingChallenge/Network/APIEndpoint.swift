@@ -9,7 +9,6 @@ import Foundation
 
 enum APIEndpoint {
     case products
-    case simulateBrokenURL
 }
 
 extension APIEndpoint {
@@ -18,12 +17,12 @@ extension APIEndpoint {
         URL(string: "http://app.check24.de/")!
     }
     
+    static let footerLink = "http://m.check24.de/rechtliche-hinweise?deviceoutput=app"
+    
     var path: String {
         switch self {
         case .products:
             "products-test.json"
-        case .simulateBrokenURL:
-            "simulate_network_error" // random URL which breaks the network request
         }
     }
 }

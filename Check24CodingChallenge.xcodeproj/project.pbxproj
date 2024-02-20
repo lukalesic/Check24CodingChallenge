@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF12B6822B84C33C00A6BE99 /* FavouritesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12B6812B84C33C00A6BE99 /* FavouritesButtonView.swift */; };
+		DF12B6842B84C78700A6BE99 /* CustomWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12B6832B84C78700A6BE99 /* CustomWKWebView.swift */; };
+		DF12B6862B84C7CB00A6BE99 /* FooterWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12B6852B84C7CB00A6BE99 /* FooterWKWebView.swift */; };
 		DFBD451A2B849EE200D5015F /* Check24CodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45192B849EE200D5015F /* Check24CodingChallengeApp.swift */; };
 		DFBD451C2B849EE200D5015F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD451B2B849EE200D5015F /* ContentView.swift */; };
 		DFBD451E2B849EEF00D5015F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD451D2B849EEF00D5015F /* Assets.xcassets */; };
@@ -19,9 +22,23 @@
 		DFBD453C2B84A29900D5015F /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD453B2B84A29900D5015F /* NetworkFetcher.swift */; };
 		DFBD453E2B84A2BE00D5015F /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD453D2B84A2BE00D5015F /* APIEndpoint.swift */; };
 		DFBD45412B84A3BC00D5015F /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45402B84A3BC00D5015F /* Error+Extension.swift */; };
+		DFBD45432B84A56300D5015F /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45422B84A56300D5015F /* DataState.swift */; };
+		DFBD45452B84A58900D5015F /* SelectedFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45442B84A58900D5015F /* SelectedFilter.swift */; };
+		DFBD45472B84A5D600D5015F /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45462B84A5D600D5015F /* ProductViewModel.swift */; };
+		DFBD45492B84A5DB00D5015F /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45482B84A5DB00D5015F /* ProductListViewModel.swift */; };
+		DFBD454B2B84A6D900D5015F /* FavouritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD454A2B84A6D900D5015F /* FavouritesManager.swift */; };
+		DFBD454E2B84AB5800D5015F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD454D2B84AB5800D5015F /* Color+Extension.swift */; };
+		DFBD45502B84AF0000D5015F /* SingleProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD454F2B84AF0000D5015F /* SingleProductView.swift */; };
+		DFBD45522B84B10500D5015F /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45512B84B10500D5015F /* ProductDetailView.swift */; };
+		DFBD45542B84B82400D5015F /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45532B84B82400D5015F /* NetworkMonitor.swift */; };
+		DFBD45562B84B9BA00D5015F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45552B84B9BA00D5015F /* ImageView.swift */; };
+		DFBD45582B84BA1300D5015F /* ProductRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45572B84BA1300D5015F /* ProductRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF12B6812B84C33C00A6BE99 /* FavouritesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesButtonView.swift; sourceTree = "<group>"; };
+		DF12B6832B84C78700A6BE99 /* CustomWKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWKWebView.swift; sourceTree = "<group>"; };
+		DF12B6852B84C7CB00A6BE99 /* FooterWKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterWKWebView.swift; sourceTree = "<group>"; };
 		DFBD45162B849EE200D5015F /* Check24CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Check24CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBD45192B849EE200D5015F /* Check24CodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check24CodingChallengeApp.swift; sourceTree = "<group>"; };
 		DFBD451B2B849EE200D5015F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +52,18 @@
 		DFBD453B2B84A29900D5015F /* NetworkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
 		DFBD453D2B84A2BE00D5015F /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		DFBD45402B84A3BC00D5015F /* Error+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extension.swift"; sourceTree = "<group>"; };
+		DFBD45422B84A56300D5015F /* DataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		DFBD45442B84A58900D5015F /* SelectedFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFilter.swift; sourceTree = "<group>"; };
+		DFBD45462B84A5D600D5015F /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		DFBD45482B84A5DB00D5015F /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		DFBD454A2B84A6D900D5015F /* FavouritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesManager.swift; sourceTree = "<group>"; };
+		DFBD454C2B84A9DD00D5015F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFBD454D2B84AB5800D5015F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		DFBD454F2B84AF0000D5015F /* SingleProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductView.swift; sourceTree = "<group>"; };
+		DFBD45512B84B10500D5015F /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		DFBD45532B84B82400D5015F /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		DFBD45552B84B9BA00D5015F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DFBD45572B84BA1300D5015F /* ProductRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +96,7 @@
 		DFBD45182B849EE200D5015F /* Check24CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				DFBD454C2B84A9DD00D5015F /* Info.plist */,
 				DFBD453F2B84A3B500D5015F /* Extensions */,
 				DFBD452D2B84A05500D5015F /* Network */,
 				DFBD452C2B84A04F00D5015F /* Managers */,
@@ -93,9 +123,10 @@
 		DFBD45272B84A01400D5015F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DFBD451B2B849EE200D5015F /* ContentView.swift */,
 				DFBD452E2B84A05D00D5015F /* Helper Views */,
+				DFBD451B2B849EE200D5015F /* ContentView.swift */,
 				DFBD452F2B84A12C00D5015F /* ProductListMainView.swift */,
+				DFBD45512B84B10500D5015F /* ProductDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +134,8 @@
 		DFBD45282B84A01800D5015F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DFBD45462B84A5D600D5015F /* ProductViewModel.swift */,
+				DFBD45482B84A5DB00D5015F /* ProductListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -121,6 +154,8 @@
 		DFBD452A2B84A03E00D5015F /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				DFBD45422B84A56300D5015F /* DataState.swift */,
+				DFBD45442B84A58900D5015F /* SelectedFilter.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -135,6 +170,7 @@
 		DFBD452C2B84A04F00D5015F /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				DFBD454A2B84A6D900D5015F /* FavouritesManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -142,8 +178,10 @@
 		DFBD452D2B84A05500D5015F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				DFBD453B2B84A29900D5015F /* NetworkFetcher.swift */,
 				DFBD453D2B84A2BE00D5015F /* APIEndpoint.swift */,
+				DFBD453B2B84A29900D5015F /* NetworkFetcher.swift */,
+				DFBD45532B84B82400D5015F /* NetworkMonitor.swift */,
+				DF12B6832B84C78700A6BE99 /* CustomWKWebView.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -151,6 +189,11 @@
 		DFBD452E2B84A05D00D5015F /* Helper Views */ = {
 			isa = PBXGroup;
 			children = (
+				DFBD454F2B84AF0000D5015F /* SingleProductView.swift */,
+				DFBD45552B84B9BA00D5015F /* ImageView.swift */,
+				DFBD45572B84BA1300D5015F /* ProductRatingView.swift */,
+				DF12B6812B84C33C00A6BE99 /* FavouritesButtonView.swift */,
+				DF12B6852B84C7CB00A6BE99 /* FooterWKWebView.swift */,
 			);
 			path = "Helper Views";
 			sourceTree = "<group>";
@@ -159,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				DFBD45402B84A3BC00D5015F /* Error+Extension.swift */,
+				DFBD454D2B84AB5800D5015F /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,16 +277,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBD45562B84B9BA00D5015F /* ImageView.swift in Sources */,
 				DFBD45342B84A1DB00D5015F /* Header.swift in Sources */,
 				DFBD453E2B84A2BE00D5015F /* APIEndpoint.swift in Sources */,
+				DFBD45432B84A56300D5015F /* DataState.swift in Sources */,
 				DFBD45382B84A20C00D5015F /* Price.swift in Sources */,
 				DFBD453C2B84A29900D5015F /* NetworkFetcher.swift in Sources */,
+				DFBD45472B84A5D600D5015F /* ProductViewModel.swift in Sources */,
+				DFBD454B2B84A6D900D5015F /* FavouritesManager.swift in Sources */,
+				DFBD45502B84AF0000D5015F /* SingleProductView.swift in Sources */,
+				DFBD454E2B84AB5800D5015F /* Color+Extension.swift in Sources */,
 				DFBD45412B84A3BC00D5015F /* Error+Extension.swift in Sources */,
 				DFBD451C2B849EE200D5015F /* ContentView.swift in Sources */,
+				DF12B6822B84C33C00A6BE99 /* FavouritesButtonView.swift in Sources */,
 				DFBD45302B84A12C00D5015F /* ProductListMainView.swift in Sources */,
 				DFBD451A2B849EE200D5015F /* Check24CodingChallengeApp.swift in Sources */,
+				DFBD45492B84A5DB00D5015F /* ProductListViewModel.swift in Sources */,
 				DFBD45362B84A1EF00D5015F /* Product.swift in Sources */,
+				DFBD45452B84A58900D5015F /* SelectedFilter.swift in Sources */,
+				DF12B6842B84C78700A6BE99 /* CustomWKWebView.swift in Sources */,
+				DFBD45542B84B82400D5015F /* NetworkMonitor.swift in Sources */,
 				DFBD45322B84A1CC00D5015F /* BaseResponse.swift in Sources */,
+				DF12B6862B84C7CB00A6BE99 /* FooterWKWebView.swift in Sources */,
+				DFBD45582B84BA1300D5015F /* ProductRatingView.swift in Sources */,
+				DFBD45522B84B10500D5015F /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +434,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Check24CodingChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				DEVELOPMENT_TEAM = VZF9RCF35Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Check24CodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -405,9 +464,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Check24CodingChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = M7NT4ZT48M;
+				DEVELOPMENT_TEAM = VZF9RCF35Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Check24CodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
