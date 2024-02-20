@@ -12,6 +12,10 @@
 		DFBD451E2B849EEF00D5015F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD451D2B849EEF00D5015F /* Assets.xcassets */; };
 		DFBD45212B849EEF00D5015F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBD45202B849EEF00D5015F /* Preview Assets.xcassets */; };
 		DFBD45302B84A12C00D5015F /* ProductListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD452F2B84A12C00D5015F /* ProductListMainView.swift */; };
+		DFBD45322B84A1CC00D5015F /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45312B84A1CC00D5015F /* BaseResponse.swift */; };
+		DFBD45342B84A1DB00D5015F /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45332B84A1DB00D5015F /* Header.swift */; };
+		DFBD45362B84A1EF00D5015F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45352B84A1EF00D5015F /* Product.swift */; };
+		DFBD45382B84A20C00D5015F /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBD45372B84A20C00D5015F /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		DFBD451D2B849EEF00D5015F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFBD45202B849EEF00D5015F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DFBD452F2B84A12C00D5015F /* ProductListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListMainView.swift; sourceTree = "<group>"; };
+		DFBD45312B84A1CC00D5015F /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		DFBD45332B84A1DB00D5015F /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		DFBD45352B84A1EF00D5015F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DFBD45372B84A20C00D5015F /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,10 @@
 		DFBD45292B84A01C00D5015F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DFBD45312B84A1CC00D5015F /* BaseResponse.swift */,
+				DFBD45332B84A1DB00D5015F /* Header.swift */,
+				DFBD45352B84A1EF00D5015F /* Product.swift */,
+				DFBD45372B84A20C00D5015F /* Price.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,9 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBD45342B84A1DB00D5015F /* Header.swift in Sources */,
+				DFBD45382B84A20C00D5015F /* Price.swift in Sources */,
 				DFBD451C2B849EE200D5015F /* ContentView.swift in Sources */,
 				DFBD45302B84A12C00D5015F /* ProductListMainView.swift in Sources */,
 				DFBD451A2B849EE200D5015F /* Check24CodingChallengeApp.swift in Sources */,
+				DFBD45362B84A1EF00D5015F /* Product.swift in Sources */,
+				DFBD45322B84A1CC00D5015F /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
